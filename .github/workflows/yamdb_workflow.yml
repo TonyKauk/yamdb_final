@@ -55,7 +55,7 @@ jobs:
           uses: docker/build-push-action@v2 
           with:
             push: true
-            tags: tonykauk/yamdb_final:latest
+            tags: tonykauk/infra_sp2:v1
 
   deploy:
       runs-on: ubuntu-latest
