@@ -10,21 +10,16 @@ from rest_framework.exceptions import MethodNotAllowed
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import AccessToken
+from reviews.models import Category, Genre, Review, Title, User
 
 from .filters import TitleFilter
 from .mixins import ListCreateDestroyViewSet
-from reviews.models import (
-    Category, Genre,
-    Review, Title, User
-)
-from .permissions import (
-    IsAdmin, IsAdminOrReadOnly, IsAdminModerAuthorAuthenticatedOrReadOnly
-)
-from .serializers import (
-    CategorySerializer, CommentSerializer, GenreSerializer,
-    ReviewSerializer, SignupSerializer, TitleGetSerializer,
-    TitleSerializer, TokenSerializer, UserSerializer
-)
+from .permissions import (IsAdmin, IsAdminModerAuthorAuthenticatedOrReadOnly,
+                          IsAdminOrReadOnly)
+from .serializers import (CategorySerializer, CommentSerializer,
+                          GenreSerializer, ReviewSerializer, SignupSerializer,
+                          TitleGetSerializer, TitleSerializer, TokenSerializer,
+                          UserSerializer)
 
 
 class UserViewSet(viewsets.ModelViewSet):

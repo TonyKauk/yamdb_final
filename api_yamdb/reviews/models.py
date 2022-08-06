@@ -2,9 +2,8 @@ import datetime as dt
 
 from django.contrib.auth.models import AbstractUser
 from django.core.exceptions import ValidationError
-from django.core.validators import (
-    RegexValidator, MinValueValidator, MaxValueValidator
-)
+from django.core.validators import (MaxValueValidator, MinValueValidator,
+                                    RegexValidator)
 from django.db import models
 
 USER = 'user'
