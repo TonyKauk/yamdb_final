@@ -8,7 +8,8 @@ services:
     env_file:
       - .env
   web:
-    build: ../api_yamdb/
+    # build: ../api_yamdb/
+    image: tonykauk/infra_sp2:v1
     restart: always
     volumes:
       - static_value:/app/static/
