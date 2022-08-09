@@ -1,5 +1,7 @@
 ![example workflow](https://github.com/tonykauk/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
+**http://localhost/**
+
 # api_yamdb
 ## Описание
 Проект **YaMDb** собирает отзывы пользователей на различные произведения.
