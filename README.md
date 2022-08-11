@@ -1,6 +1,6 @@
 ![example workflow](https://github.com/tonykauk/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
-**http://localhost/**
+**http://51.250.20.145/redoc/**
 
 # api_yamdb
 ## Описание
